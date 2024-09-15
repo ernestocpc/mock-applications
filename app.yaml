@@ -1,0 +1,7 @@
+runtime: nodejs20
+
+env_variables:
+  DB_KEY: "abc"
+  JWT_SECRET: "***"
+
+service: service1
