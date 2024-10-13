@@ -10,5 +10,15 @@ export class AppService {
     };
     return purchase;
   }
+
+  getUser(): any {
+    // Generate a new user each time this method is called
+    const user = {
+      id: 1,
+      name: 'John Doe',
+      email: 'johnDoe@gmail.com,',
+    };
+    return user;
+  }
 }
 

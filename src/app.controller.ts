@@ -9,4 +9,9 @@ export class AppController {
   getPurchase(): string {
     return this.appService.getPurchase();
   }
+
+  @Get('user')
+  getUser(): string {
+    return this.appService.getUser();
+  }
 }
