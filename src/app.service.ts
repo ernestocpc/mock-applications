@@ -2,17 +2,18 @@ import { Injectable } from '@nestjs/common';
 
 @Injectable()
 export class AppService {
+
+  // Generate a new purchase each time this method is called
   getPurchase(): any {
-    // Generate a new price value each time this method is called
     const purchase = {
-      id: 1,
-      price: Math.floor(Math.random() * 1000) + 1, // Random price between 1 and 1000
+      id: Math.floor(Math.random() * 1000) + 1,
+      price: Math.floor(Math.random() * 1000) + 1,
     };
     return purchase;
   }
 
+  // Generate a new user each time this method is called
   getUser(): any {
-    // Generate a new user each time this method is called
     const user = {
       id: 1,
       name: 'John Doe',
